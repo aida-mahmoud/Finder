@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Finder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="finder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    
+    <link rel="stylesheet" href="assets/css/docs.theme.min.css">
+        <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+</head>
+<body>
+    <div id="mainback">
+     
+    </div>    
+    <div class="container-fluid  col-sm-10 offset-sm-1">
+                <ul class= "navbar navbar-expand-sm   fixed-top col-sm-12 " >
+                  <li class="col-sm-1 offset-sm-1">
+                      <a class="navbar-brand col-sm-1" href="#"><i class="fas fa-search"></i> Finder</a>                      
+                  </li>
+                  <li class="nav-item">
+                    <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                          Demos
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Real Estate Demo</a>
+                          <a class="dropdown-item" href="#">Car Finder Demo</a>
+                          <a class="dropdown-item" href="#">Job Board Demo</a>
+                          <a class="dropdown-item" href="#">City Guide Demo</a>
+                          <a class="dropdown-item" href="#">Main Page</a>
+                          <a class="dropdown-item" href="#">Components</a>
+                          <a class="dropdown-item" href="#">Documentation</a>                      
+                        </div>
+                      </div>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link " href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                          Catalog
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">List View</a>
+                          <a class="dropdown-item" href="#">Grid View</a>
+                          <a class="dropdown-item" href="#">Car Single Page</a>                     
+                        </div>
+                      </div>             
+                     </li>
+                     <li class="nav-item">
+                            <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                  Account
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Personal Info</a>
+                                  <a class="dropdown-item" href="#">Password & Security</a>
+                                  <a class="dropdown-item" href="#">My Cars</a>
+                                  <a class="dropdown-item" href="#">Wishlist</a>
+                                  <a class="dropdown-item" href="#">Reviews </a>
+                                  <a class="dropdown-item" href="#">Notifications</a>
+                                  <a class="dropdown-item" href="#">Sign In</a>  
+                                  <a class="dropdown-item" href="#">Sign Up</a>                      
+                                </div>
+                              </div>
+                          </li>
+                          <li class="nav-item">
+                                <div class="dropdown">
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                      Vender
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#">Sell Car</a>
+                                      <a class="dropdown-item" href="#">Ad Promotion</a>
+                                      <a class="dropdown-item" href="#">Vender Page</a>                     
+                                    </div>
+                                  </div>             
+                                 </li>
+                        <li class="nav-item col-sm-1">
+                            <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                    Pages
+                                </button>
+                                <div class="dropdown-menu ">
+                                    <a class="dropdown-item" href="#">About</a>
+                                    <a class="dropdown-item" href="#">Blog</a>
+                                    <a class="dropdown-item" href="#">Contacts</a> 
+                                    <a class="dropdown-item" href="#">Help Center</a>                     
+                                    <a class="dropdown-item" href="#">404 Not Found</a>                                                     
+                                </div>
+                                </div>             
+                        </li>     
+                        <li class="nav-item col-sm-1 offset-sm-2">
+                            <a href="#" class="nav-link"><i class="fas fa-user"></i> Sign in</a>
+                        </li>
+                        <li class="nav-item col-sm-1">
+                            
+                          <button class="btn btn-primary" type="button"><i class="fas fa-plus"></i> Sell car</button>
+                            
+                        </li>
+                </ul>
+             <!-- -->
+            
+    <div class="row" id="home" >
+            <div id="homep" >
+                    <h1 >Easy way to find the right car</h1>
+                    <p>Finder is a leading digital marketplace for the automotive industry that connects car shoppers with sellers.</p>
+            </div>
+            
+        <img src="imgs/hero-img.png" >  
+        
+    </div> 
+    <div class="row">
+      <div class="col-sm-1 offset-sm-0 new">
+        <button type="button" class="btn btn-secondary disabled">New</button>
+      </div>
+      <div class="col-sm-1 use">
+          <button type="button" class="btn btn-light used">Used</button>
+          
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-group">
+            <span class="input-group-text col-sm-2"><i class="fas fa-search"></i>
+            <input type="text" placeholder="keywords..." class="form-control"></span>
+            <div class="dropdown col-sm-2">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                    Make
+                </button>
+                <div class="dropdown-menu ">
+                    <a class="dropdown-item" href="#">Acura</a>
+                    <a class="dropdown-item" href="#">BMW</a>
+                    <a class="dropdown-item" href="#">Citroen</a> 
+                    <a class="dropdown-item" href="#">Lexus </a>                     
+                    <a class="dropdown-item" href="#">Nissan</a>                                                     
+                </div>
+            </div>
+            <div class="dropdown col-sm-2">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                    Model
+                </button>
+                <div class="dropdown-menu ">
+                    <a class="dropdown-item" href="#">Altima</a>
+                    <a class="dropdown-item" href="#">Juke</a>
+                    <a class="dropdown-item" href="#">Leaf</a> 
+                    <a class="dropdown-item" href="#">Maxima </a>                     
+                    <a class="dropdown-item" href="#">Note</a>   
+                    <a class="dropdown-item" href="#">Patrol</a>                                                     
+                    <a class="dropdown-item" href="#">Murano</a>                                                     
+                    
+                </div>
+            </div> 
+            <div class="dropdown col-sm-2">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-car-side  "></i> Body type
+                </button>
+                <div class="dropdown-menu ">
+                    <a class="dropdown-item" href="#">Compact</a>
+                    <a class="dropdown-item" href="#">Crossover</a>
+                    <a class="dropdown-item" href="#">Coupe</a> 
+                    <a class="dropdown-item" href="#">Family MPV</a>                     
+                    <a class="dropdown-item" href="#">Sedan</a>   
+                    <a class="dropdown-item" href="#">SUV</a>   
+                    <a class="dropdown-item" href="#">Wagon</a>   
+                    <a class="dropdown-item" href="#">PickUp</a>                                                                         
+                    
+                </div>
+              </div>
+              <div class="dropdown col-sm-2">
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-location  "></i> Location
+                  </button>
+                  <div class="dropdown-menu ">
+                      <a class="dropdown-item" href="#">Chicago</a>
+                      <a class="dropdown-item" href="#">Dallas</a>
+                      <a class="dropdown-item" href="#">Los Angeles </a>
+                      <a class="dropdown-item" href="#">Las Vegas </a>
+                      <a class="dropdown-item" href="#">New York </a>                      
+                      <a class="dropdown-item" href="#">San Diego </a>                                                      
+                  </div>
+              </div>           
+              <button class="btn col-sm-2" type="button" id="button-addon">Search</button>
+            </div>
+    </div>
+    <div class="row ">
+      <h2 class="car">Popular car body types</h2>
+      <div class="cars col-sm-2 ">
+        <img src="wagon.svg" alt="" srcset="">
+        <p>Wagon</p>
+      </div>
+      <div class="cars col-sm-2 ">
+          <img src="sedan.svg" alt="" srcset="">
+          <p>sedan</p>
+      </div>
+      <div class="cars col-sm-2 ">
+          <img src="suv.svg" alt="" srcset="">
+          <p>suv</p>
+      </div>
+      <div class="cars col-sm-2 ">
+          <img src="crossover.svg" alt="" srcset="">
+          <p>crossover</p>
+      </div>  
+      <div class="cars col-sm-2 ">
+          <img src="coupe.svg" alt="" srcset="">
+          <p>coupe</p>
+      </div>
+      <div class="cars col-sm-2 ">
+          <img src="pickup.svg" alt="" srcset="">
+          <p>pickup</p>
+        </div>
+        <div class="cars col-sm-2 ">
+            <img src="sport.svg" alt="" srcset="">
+            <p>Sport Coupe</p>
+        </div>
+        <div class="cars col-sm-2 ">
+            <img src="compact.svg" alt="" srcset="">
+            <p>Compact</p>
+        </div>
+        <div class="cars col-sm-2 ">
+            <img src="convertible.svg" alt="" srcset="">
+            <p>Convertible</p>
+        </div>  
+        <div class="cars col-sm-2 ">
+            <img src="mpv.svg" alt="" srcset="">
+            <p>Family Mpv</p>
+        </div>
+    </div>
+    <div class="row TopOffers">
+      <h2>Top offers</h2>
+      <div class="col-sm-6 Top-offers">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/03.jpg" height="250" width="100%">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/03.jpg"  height="250" width="100%">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/03.jpg" height="250" width="100%">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="row topofers">
+              <h6>2015</h6>
+              <a href="#">Mercedes Benz Convertible Coupe</a>
+              <small>$25.800</small>
+              <p>New York</p>              
+            </div>
+            <div class="row offset-sm-1 ">
+              <span class="col-sm-3 ">48k mi</span>
+              <span class="col-sm-3">Automatic</span>
+              <span class="col-sm-3">Gasoline</span>
+            </div>
+      </div>
+      <div class="col-sm-6 ">
+        <div class="row Top-offers2">
+            <div class="col-sm-5"><img src="imgs/05.jpg" alt="" width="100%" height="200"> </div>
+            <div class="col-sm-7 ">
+                <div class="row topofers">
+                    <h6>2015</h6>
+                    <a href="#">Mercedes Benz Convertible Coupe</a>
+                    <small>$25.800</small>
+                    <p>New York</p>              
+                  </div>
+                  <div class="row offset-sm-1 ">
+                    <span class="col-sm-3 ">48k mi</span>
+                    <span class="col-sm-3">Automatic</span>
+                    <span class="col-sm-3">Gasoline</span>
+                  </div>
+            </div>
+        </div>
+        <div class="row Top-offers2">
+            <div class="col-sm-5"><img src="imgs/08.jpg" alt="" width="100%" height="200"> </div>
+            <div class="col-sm-7">
+                <div class="row topofers">
+                    <h6>2015</h6>
+                    <a href="#">Mercedes Benz Convertible Coupe</a>
+                    <small>$25.800</small>
+                    <p>New York</p>              
+                  </div>
+                  <div class="row offset-sm-1 ">
+                    <span class="col-sm-3 ">48k mi</span>
+                    <span class="col-sm-3">Automatic</span>
+                    <span class="col-sm-3">Gasoline</span>
+                  </div>
+            </div>
+        </div>
+          
+      </div>
+    </div>
+      <div class="row brands">
+          <img src="opel.svg"class="col-sm-1" alt="" srcset="" style"color:gray" >
+          <img src="audi.svg"class="col-sm-1" alt="" srcset="" style"color:gray" >
+          <img src="mercedes.svg"class="col-sm-1" alt="" srcset="" style"color:gray" >
+          <img src="toyota.svg"class="col-sm-1" alt="" srcset="" style"color:gray" >
+          <img src="mazda.svg"class="col-sm-1" alt="" srcset="" style"color:gray" >
+          <img src="nissan.svg"class="col-sm-1" alt="" srcset="" style"color:gray" >
+          <img src="hyundai.svg"class="col-sm-1" alt="" srcset="" style"color:gray" >
+          
+          <img src="lexus.svg"class="col-sm-1" alt="" srcset="" style"color:gray" >
+          <img src="honda.svg"class="col-sm-1" alt="" srcset="" style"color:gray" >
+          <img src="renault.svg"class="col-sm-1" alt="" srcset="" style"color:gray" >
+          <img src="infiniti.svg"class="col-sm-1" alt="" srcset="" style"color:gray" >
+          <img src="mitsubishi.svg"class="col-sm-1" alt="" srcset="" style"color:gray" >
+        
+      </div>
+      
+      <div class="row parts">
+        <div class="row mb-50">
+            <h2 class="col-sm-6 pb-100">What sets Finder apart?</h2>
+            <a href="#" class="col-sm-3 offset-sm-3">How to sell cars on finder  <i class="far fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+          
+          <div class="col-sm-4 offset-sm-1 parts1">
+            <div >
+              <h4>Over 1 Million Listings <i class="far fa-file "></i></h4>
+              <p class="col-sm-11">That’s more than you’ll find on any other major online automotive marketplace in the USA.</p>
+          </div>
+          <div>
+              <h4>Personalized Search <i class="fas fa-search"></i></h4>
+              <p class="col-sm-11">Our powerful search makes it easy to personalize your results so you only see the cars and features you care about.</p>
+          </div>
+          <div>
+              <h4>Non-Stop Innovation <i class="far fa-cog"></i></h4>
+              <p class="col-sm-11">Our powerful search makes it easy to personalize your results so you only see the cars and features you care about.</p>
+          </div>
+  
+          </div>
+          <div class="col-sm-1  parts3 ">
+             
+            <img src="road-line.svg" alt="" width="2" class="position- start-40 " height="70%">
+            <img src="imgs/car.svg" alt="" width="85%" class="position- " id="mycar" >
+          </div>
+          <div class="col-sm-4 parts2 offset-sm-1">
+              <div >
+                  <h4 class="col-sm-10"><i class="far fa-info-circle "></i> Valuable Insights </h4>
+                  <p class="offset-sm-1">We provide free access to key info like dealer reviews, market value, price drops.</div>
+              <div>
+                  <h4><i class="far fa-users"></i> Consumer-First Mentality </h4>
+                  <p class="offset-sm-1">We focus on building the most transparent, trustworthy experience for our users, and we’ve proven that works for dealers, too.
+
+              </div>
+              <div>
+                 <h4>  <i class="fa fa-calculator"></i> Online Car Appraisal </h4>
+                  <p class="offset-sm-1">Specify the parameters of your car to form its market value on the basis of similar cars on Finder.
+              </div>  
+          </div>        
+        </div>
+        <!--Start Latest cars-->
+
+
+        <div class="row Latest">
+          <div class="row">
+            <h2 class="col-sm-3">Latest cars</h2>
+            <button type="button" class="btn btn-light used offset-sm-6 ">New</button>            
+            <button type="button" class="btn btn-secondary disabled col-sm-1">Used</button>
+            <a href="#" class="col text-end">View all  <i class="far fa-arrow-right"></i></a> 
+          </div>
+            
+            <section id="demos">
+              <div class="owl-carousel owl-theme">
+                <div class="item Latest1">
+                  <img src="imgs/04.jpg" width="100%" height="45%">
+                  <div class="row topofers">
+                        <h6 >2018</h6>
+                        <a href="#">Mercedes Benz Convertible Coupe</a>
+                        <small>$25.800</small>
+                        <p>New York</p>              
+                  </div>
+                  <div class="row justify-content-center">
+                    <span class="col-sm-3 ">48k mi</span>
+                    <span class="col-sm-3">Automatic</span>
+                    <span class="col-sm-3">Gasoline</span>
+                  </div>
+                </div>
+                <div class="item Latest1">
+                  <img src="imgs/08.jpg" width="100%" height="45%">
+                  <div class="row topofers">
+                      <h6>2019</h6>
+                      <a href="#">Mercedes Benz Convertible Coupe</a>
+                      <small>$25.800</small>
+                      <p>New York</p>              
+                  </div>
+                  <div class="row justify-content-center">
+                    <span class="col-sm-3 ">48k mi</span>
+                    <span class="col-sm-3">Automatic</span>
+                    <span class="col-sm-3">Gasoline</span>
+                  </div>
+                </div>
+                <div class="item Latest1">
+                  <img src="imgs/03.jpg" width="100%" height="45%">
+                  <div class="row topofers">
+                      <h6>2017</h6>
+                      <a href="#">Mercedes Benz Convertible Coupe</a>
+                      <small>$25.800</small>
+                      <p>New York</p>              
+                </div>
+                <div class="row justify-content-center">
+                  <span class="col-sm-3 ">48k mi</span>
+                  <span class="col-sm-3">Automatic</span>
+                  <span class="col-sm-3">Gasoline</span>
+                </div>
+                </div>
+                <div class="item Latest1">
+                  <img src="imgs/02.jpg" width="100%" height="45%">
+                  <div class="row topofers">
+                      <h6>2015</h6>
+                      <a href="#">Mercedes Benz Convertible Coupe</a>
+                      <small>$25.800</small>
+                      <p>New York</p>              
+                </div>
+                <div class="row ">
+                  <span class="col-sm-3 ">48k mi</span>
+                  <span class="col-sm-3">Automatic</span>
+                  <span class="col-sm-3">Gasoline</span>
+                </div>
+                </div>
+                </div>               
+                    <script>
+                      $(document).ready(function() {
+                        var owl = $('.owl-carousel');
+                        owl.owlCarousel({
+                          margin: 20,
+                          nav: true,
+                          loop: true,
+                          responsive: {
+                            0: {
+                              items: 1
+                            },
+                            800: {
+                              items: 3
+                            },
+                            1500: {
+                              items: 3
+                            }
+                          }
+                        })
+                      })
+                    </script>
+              </section>
+          
+        </div>
+        <!--End of latest cars-->
+      <div class="row Auto-Market">
+        <div class="col-sm-3 text-start">
+          <h2 >Auto Market</h2>
+          <p>Choose the best for your car! </p>
+          <button class="btn btn-danger">Go to shop</button>
+        </div>
+        <div class="col-sm-2"> 
+            <img src="imgs/seats.png" alt="" width="100%" >
+            <p>Seats Covers</p>
+        </div>
+        <div class="col-sm-2"> 
+            <img src="imgs/tires.png" alt="" width="100%">
+            <p>Tires</p>
+        </div>
+        <div class="col-sm-2"> 
+            <img src="imgs/disk.png" alt="" width="100%">
+            <P>Disks</P>
+        </div>
+        <div class="col-sm-2"> 
+            <img src="imgs/childs.png" alt=""width="100%" >
+            <p>Child seats</p>
+        </div>
+      </div>
+        <div class="row top-rated">
+        <div class="col-sm-5 offset-sm-1">
+          <h2>Get the top-rated app!</h2>
+          <p>Download Finder App and join the community of car enthusiasts. Don't stop your car search when you leave your computer with our Android and iOS app!</p>
+          <button class="btn "><i class="fab fa-apple">
+            <small>Available on the</small> </i> App store</button>
+          <button  class="btn "><i class="fab fa-google-play"><small>GET IT ON </small> Google play</i></button>
+        </div>
+        <div class="col-sm-5 offset-sm-1">
+            <img src="imgs/mobile-app.png" alt="" srcset=""width="90%" >
+          </div>
+      </div>
+     <div class="row Latest-news">
+       <div class="row">
+          <h2 class="col-sm-6">Latest news</h2>
+          <a href="#" class="col-sm-6 text-end">Go to blog   <i class="far fa-arrow-right" aria-hidden="true"></i></a>
+       </div>
+        
+        <div class="col-sm-4">
+          <img src="imgs/blue.jpg" width="100%">
+          <small>EVENTS</small>          
+          <h6 class="top">Top 10 Classic Car events</h6>
+          <div class="row">
+            <div class="col-sm-2">
+                <img src="imgs/jacob.jpg" alt="Jacob" class="rounded-circle " width="100%">              
+            </div>
+            <div class="col-sm-8 offset-sm-">
+              <h6 class="col-sm">Jacob Jones</h6>  
+              <p class="opacity-70"> <i class="far fa-birthday-cake" aria-hidden="true"></i> May 8 <i class="far fa-comment"></i> No comments</p>          
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+            <img src="imgs/white.jpg" width="100%">
+            <small>INSPIRATION</small>          
+            <h6 class="top">5 Predictions From the Past About the Future</h6>
+            <div class="row">
+              <div class="col-sm-2">
+                  <img src="imgs/guy.jpg" alt="Guy" class="rounded-circle " width="100%">              
+              </div>
+              <div class="col-sm-8 offset-sm-">
+                <h6 class="col-sm">Guy Hawkins</h6>  
+                <p class="opacity-70"> <i class="far fa-birthday-cake" aria-hidden="true"></i> Apr 25 <i class="far fa-comment"></i> 6 comments</p>          
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+              <img src="imgs/06.jpg" width="100%">
+              <small>TEST DRIVEN</small>          
+              <h6 class="top">This Year is All About New Harley Davidson</h6>
+              <div class="row">
+                <div class="col-sm-2">
+                    <img src="imgs/ralph.jpg" alt="Jacob" class="rounded-circle " width="100%">              
+                </div>
+                <div class="col-sm-8 offset-sm-">
+                  <h6 class="col-sm">Ralph Edwards</h6>  
+                  <p class="opacity-70"> <i class="far fa-birthday-cake" aria-hidden="true"></i> Mar 12  <i class="far fa-comment"></i> 2 comments</p>          
+                </div>
+              </div>
+            </div>  
+         
+             
+            
+     </div>
+    
+     
+    </div>
+
+
+      <footer >
+        <div class="container-fluid col-sm-10 offset-sm-1">
+            <div class="row">
+                <a class="navbar-brand col-sm-1" href="#"><i class="fas fa-search"></i> Finder</a>
+                <ul class="list-inline   col-sm-3 offset-sm-9 text-end">
+                  <li class="list-inline-item">
+                    <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                            <i class="far fa-globe"></i> Eng
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Duetsch</a>
+                          <a class="dropdown-item" href="#">Francais</a>
+                          <a class="dropdown-item" href="#">Espanol</a>                     
+                        </div>
+                    </div>  
+                  </li>
+                  <li class="list-inline-item">
+                      <div class="dropdown">
+                          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                              <i class="fa fa-location  "></i> New York
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Chicago</a>
+                            <a class="dropdown-item" href="#">Dallas</a>
+                            <a class="dropdown-item" href="#">Los Angeles </a>
+                            <a class="dropdown-item" href="#">San Diego </a>                     
+                            
+                          </div>
+                      </div> 
+                  </li>
+                </ul>                      
+                
+                 
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Don’t miss any relevant offers!</p>
+                  <div class="input-group mb-3 col-sm-2">
+                      <i class="far fa-envelope"></i>
+                      <input type="text" class="form-control" placeholder="Your email"  >
+                      <button class="btn " type="button" id="button-addon2"><i class="far fa-paper-plane"></i></button>
+                      
+                    </div>
+                </div>
+                <div class="col-sm-2 offset-sm-1">
+                    <h5>Buying & Selling</h5>                    
+                  <ul class="list">
+                    <li class="list-item"> Find a car</li>
+                    <li class="list-item"> Sell your car</li>
+                    <li class="list-item"> Car dealers</li>
+                    <li class="list-item"> Compare cars</li>
+                    <li class="list-item">Online car appraisal </li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About</h5>
+                    <ul class="list">
+                        <li class="list-item"> About Finder</li>
+                        <li class="list-item"> Contact us</li>
+                        <li class="list-item">FAQs & support</li>
+                        <li class="list-item">Mobile app</li>
+                        <li class="list-item">Blog</li>
+                      </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Profile</h5>
+                    <ul class="list">
+                        <li class="list-item">My account</li>
+                        <li class="list-item"> Wishlist</li>
+                        <li class="list-item">My listings</li>
+                        <li class="list-item">Add listing</li>
+                      </ul>
+                </div>
+                <div class="col-sm-2 text-start info">
+                  <a href="#" class="text-decoration-none  col-sm-2"><i class="far fa-mobile pr-10"></i><span> (406) 555-0120</span> </a><br>
+                  <a href="#" class="text-decoration-none col-sm-2"><i class="far fa-envelope"></i><span> example@email.com</span> </a>
+                  <ul class="list-inline brands">
+                      <li class="list-inline-item"><i class="fab fa-facebook-f"></i></li>
+                      <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+                      <li class="list-inline-item"><i class="fab fa-telegram"></i></li>
+                      <li class="list-inline-item"><i class="fab fa-facebook-messenger"></i></i></li>                      
+                  </ul>    
+                </div>
+                
+            </div>
+            <div class="row last">
+              <p class="col-sm-6">© All rights reserved. Made by Createx Studio</p>
+              <ul class="list-inline brands col-sm-6 offset-sm-2 text-end" >
+                  <li class="list-inline-item">Terms of use</li>
+                  <li class="list-inline-item">Privacy Policy</li>
+                  <li class="list-inline-item">Accessibility statement</li>
+                  <li class="list-inline-item">Interest Based Ads</li>                      
+              </ul> 
+            </div>
+        </div>
+        
+        
+      </footer>
+      <script>
+        var mycar=document.getElementById("mycar");
+
+        window.onscroll=()=>{
+          var s=document.documentElement.scrollTop/15-100;
+          console.log(s);
+          mycar.style.top=(s+100)+"px";
+        }
+
+        var slider = tns({
+          container: ".my-slider",
+          items: 3,
+          gutter: 20,
+          slideBy: 1,
+          controlsPosition: "bottom",
+          navPosition: "bottom",
+          mouseDrag: true,
+          autoplay: true,
+          autoplayButtonOutput: false,
+          controlsContainer: "#custom-control",
+          responsive: {
+            0: {
+              items: 1,
+              nav: false
+            },
+            768: {
+              items: 2,
+              nav: true
+            },
+            1440: {
+              items: 3
+            }
+          }
+        });
+        
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+      <script type="text/javascript" src="https://your-site-or-cdn.com/fontawesome/v6.1.1/js/conflict-detection.js">
+      </script>
+</body>
+</html>
