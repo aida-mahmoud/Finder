@@ -1,0 +1,63 @@
+
+.Top-offers ,.Top-offers img ,.Top-offers2 ,.Top-offers2 img{
+    border-radius: 25px;
+  /*  border: 1px solid rgba(255, 255, 255, 0.04);   */
+    color: white; 
+    margin: 0px;
+    background-color: rgba(255, 255, 255, .06) !important;
+    
+}
+.Top-offers .carousel-item{
+    width: 100%;
+}
+.topofers{
+    margin: 20px;
+    opacity: .7;
+    border-bottom: 1px solid gray;
+}
+.topofers a{
+    color: white;
+    opacity: .7;
+    text-decoration: none;
+ }
+ .topofers a:hover{
+    opacity: 1;
+ }
+.topofers small{
+    color: orangered;
+}
+.Top-offers span ,.Top-offers2  span{
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, .02) !important;
+    margin: 10px;
+    font-size: 12px !important;
+}
+.Top-offers2{
+    margin-bottom: 20px;
+}
+.Top-offers:hover ,.Top-offers2:hover {
+    opacity: .7;
+    border: 1px solid gray;
+}
+.Latest-news{
+    padding:100px 20px;
+    color: white;
+}
+.Latest-news small{
+    color: orangered;
+    font-size: 12px;
+    padding-bottom: 25px;
+}
+.Latest-news .row:nth-of-type(1){
+    margin-bottom: 30px;
+}
+.Latest-news img{
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+.top,.Latest-news p{
+    opacity: .6;
+}
